@@ -3,16 +3,7 @@ defmodule CoinifyRabbitmq do
   Documentation for `CoinifyRabbitmq`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> CoinifyRabbitmq.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def register_consumer(event) do
+    CoinifyRabbitmq.Consumer.start_link(event)
   end
 end

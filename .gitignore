@@ -22,6 +22,7 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 coinify_rabbitmq-*.tar
 
-
 # Temporary files for e.g. tests
 /tmp
+log
+.elixir_ls
